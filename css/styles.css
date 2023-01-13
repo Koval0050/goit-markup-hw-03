@@ -29,7 +29,7 @@ button {
 .list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
 }
 .link {
   text-decoration: none;
@@ -61,9 +61,13 @@ button {
 }
 .wrap {
   flex-wrap: wrap;
-  padding-bottom: 120px;
+  margin-top: 72px;
+  row-gap: 48px;
 }
-
+.img {
+  display: block;
+  height: auto;
+}
 /*========================/UTILITY====================*/
 
 /*========================LOGO====================*/
@@ -87,6 +91,7 @@ button {
 /*========================NAVIGATION====================*/
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.368);
+  padding: 24px 0;
 }
 .header-container {
   display: flex;
@@ -95,7 +100,6 @@ button {
 }
 .nav-menu {
   display: flex;
-  padding: 24px 0 24px 0;
 }
 .menu {
   display: flex;
@@ -117,7 +121,6 @@ button {
 }
 .address {
   margin-left: auto;
-  padding: 24px 0 24px 0;
 }
 .contact {
   display: flex;
@@ -142,6 +145,8 @@ button {
 
 .hero {
   background-color: var(--main-dark-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -150,9 +155,8 @@ button {
   line-height: calc(60 / 56);
   text-align: center;
   color: #ffffff;
-  padding-top: 200px;
   max-width: 490px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 48px auto;
 }
 .modal-btn {
   font-family: inherit;
@@ -163,8 +167,7 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   border-radius: 4px;
-  padding: 16px 32px 16px 32px;
-  margin-bottom: 190px;
+  padding: 16px 32px;
   min-width: 180px;
 }
 .modal-btn-center {
@@ -205,10 +208,11 @@ button {
 /*========================/TEXT STYLE====================*/
 
 /*========================FILTER====================*/
-.btn-filter-section {
-  padding-top: 96px;
-  padding-bottom: 72px;
+.filter{
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
+
 .filter-list {
   justify-content: center;
 }
@@ -232,24 +236,21 @@ button {
   color: #ffffff;
 }
 .text-filter-card {
-  margin-left: 16px;
+  padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 /*========================/FILTER====================*/
 
 /*========================FOOTER====================*/
-.footer-section {
-  height: 110px;
-  width: 264px;
-  padding: 100px 0 150px 0;
-}
 .footer {
   background-color: var(--main-dark-color);
+  padding: 100px 0;
 }
 .footer-color-text {
   margin-top: 16px;
   color: #e7e9fc;
+  width: 264px;
 }
 /*========================/FOOTER====================*/
 
